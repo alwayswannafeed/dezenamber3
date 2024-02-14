@@ -19,3 +19,7 @@ def mnozh_3cifri(a):
     c = n%10
     d = n//10
     return b*c*d
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
