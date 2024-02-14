@@ -12,3 +12,7 @@ def is_prime(n):
     return True
 def is_power_of_five(n):
     return n > 0 and (n & (n - 1)) == 0 and n % 5 == 0
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
