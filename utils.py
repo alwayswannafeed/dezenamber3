@@ -12,3 +12,10 @@ def is_prime(n):
     return True
 def is_power_of_five(n):
     return n > 0 and (n & (n - 1)) == 0 and n % 5 == 0
+def mnozh_3cifri(a):
+    a = abs(a)
+    b = a%10
+    n = a//10
+    c = n%10
+    d = n//10
+    return b*c*d
